@@ -1,0 +1,130 @@
+
+/* --lavendar: #6D7993;
+--dusty: #96858F;
+--overcast: #9099A2;
+--paper: #D5D5D5;
+--void: #0E0B16;
+--fuschia: #A239CA;
+--jewel: #4717F6;
+--stark: #e7dfdd; */
+
+/* Variables */
+:root {
+    --lavendar: #6D7993;
+    --dusty: #96858F;
+    --overcast: #9099A2;
+    --paper: #D5D5D5;
+    --void: #0E0B16;
+    --fuschia: #A239CA;
+    --jewel: #4717F6;
+    --stark: #e7dfdd;
+    --black: #000000;
+    --ink: #062f4f;
+    --posy:#813772;
+    --posyO:#81377262;
+    --embers: #b82601;
+    
+}
+
+input{
+    color: var(--paper) !important;
+    background-color: var(--posyO) !important;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--paper); /* Texto en un tono gris claro */
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h5 {
+    margin: 10px;
+    color: var(--jewel); /* Título en un tono morado oscuro */
+    transition: color 0.3s; /* Transición de color al pasar el mouse */
+}
+
+h5:hover {
+    color: var(--embers); /* Cambio de color al pasar el mouse */
+}
+
+footer {
+    background-color: var(--black); /* Fondo del pie de página en un tono gris claro */
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para las películas */
+.pelicula {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: var(--void); /* Texto de la película en un tono oscuro */
+    transition: transform 0.3s; /* Transición de transformación al pasar el mouse */
+}
+
+.pelicula:hover {
+    transform: scale(1.05); /* Aumento de tamaño al pasar el mouse */
+}
+
+.pelicula img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.pelicula h5 {
+    color: var(--embers); /* Título de la película en un tono morado oscuro */
+}
+
+.pelicula p, a {
+    color: var(--paper); /* Descripción de la película en un tono morado */
+}
+
+a:hover{
+    color: var(--posy)!important;
+} 
+
+.card {
+    background-color: var(--void); /* Fondo de la tarjeta en un tono oscuro */
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el mouse */
+    border-radius: 15px;
+}
+
+.card:hover {
+    background-color: var(--dusty); /* Cambio de color de fondo al pasar el mouse */
+}
+
+.boton{
+    margin-left: .5rem ;
+}
+
+#navbar{
+    height: 5rem !important;
+    transition: background-color 0.3s ease !important; /* Transición suave */
+}
+
+.color{
+    background-color: var(--void) !important;
+}
+
+.tamanoUl{
+    font-size: x-large;
+}
+
+/* .card-body {
+    
+} */
