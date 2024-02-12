@@ -1,0 +1,14 @@
+{
+  "name": "challenge-testing",
+  "version": "1.0.0",
+  "description": "\"homework de testing\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest tests"
+  },
+  "author": "Jorge Zimmermann",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
