@@ -1,18 +1,17 @@
 const createMovieCard = require("./createCards.js");
-const $ = require("jquery");
+const createErrorMessage = require("./createError.js")
+const axios = require("axios")
 
-function getMovies() {
-    const divRow = document.getElementById("peliculas");
-    
-    $.get(`https://students-api.2.us-1.fl0.io/movies`, (pelicula, status)=> {
+const getMovies = async () => {
+    try{
+        const data =  await axios.get(`http://localhost:3000/movies`);
+        data.data.map(movie => createMovieCard(movie.title, movie.director, movie.duration, movie.poster, movie.year, movie.rate, movie.description));
 
-        /* console.log(pelicula);
-        console.log(status); */
-
-        const cards = pelicula.map(movie => createMovieCard(movie.title, movie.director, movie.duration, movie.poster));
-        cards.forEach(card => divRow.appendChild(card));
-
-    });
+    }catch(data){
+        createErrorMessage(data)
+        console.log(data.message);
+    }
 }
+
 
 module.exports = getMovies;

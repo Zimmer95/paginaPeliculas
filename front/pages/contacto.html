@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://zimmer95.github.io/paginaPeliculas/front/styles/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>FAQ - Preguntas Frecuentes</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand image" href="https://zimmer95.github.io/paginaPeliculas/front/index.html">
+                    <img class="image" id="logo" src="https://zimmer95.github.io/paginaPeliculas/front/assets/img/UpStarTicket3.png" alt="Bootstrap" width="150" height="90">
+                </a>
+            <button class="navbar-toggler colorBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse menuDesplegable" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 tamanoUl">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://zimmer95.github.io/paginaPeliculas/front/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://zimmer95.github.io/paginaPeliculas/front/nuevaPelicula.html">Agregar películas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://zimmer95.github.io/paginaPeliculas/front/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://zimmer95.github.io/paginaPeliculas/front/about.html">Sobre nosotros</a>
+                </li>
+                </ul>
+                <form class="d-flex m10" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn boton" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container margen">
+        <h1>Contacto</h1>
+        <hr>
+        <div>
+            <h2>Información de Contacto </h2>
+            <hr>
+            <p>
+                Puedes contactarnos a través de los siguientes medios:
+            </p>
+            <ul>
+                <li>Teléfono: 3545 5452540 </li>
+                <li>Email: correoficticio@correo.com</li>
+                <li>Dirección: Av Siempre Viva 1234</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <h2>Formulario de Contacto</h2>
+            <hr>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página de Películas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-function createMovieCard(title, director, duration, imageUrl) {
+function createMovieCard(title, director, duration, imageUrl, year, rate, description) {
     const cardHTML = `
         <div class="col-sm pelicula">
             <div class="card">
@@ -6,6 +6,9 @@ function createMovieCard(title, director, duration, imageUrl) {
                 <div class="card-body">
                     <h5 class="card-title">${title}</h5>
                     <p class="card-text">Director: ${director}</p>
+                    <p class="card-text">Año: ${year}</p>
+                    <p class="card-text">Valoracion: ${rate}</p>
+                    <p class="card-text"> ${description}</p>
                     <a href="#" class="btn btn-dark boton">Duración: ${duration}</a>
                 </div>
             </div>
@@ -13,7 +16,8 @@ function createMovieCard(title, director, duration, imageUrl) {
     `;
     const divCol = document.createElement("div");
     divCol.innerHTML = cardHTML;
-    return divCol.firstElementChild;
+    const divRow = document.getElementById("peliculas");
+    divRow.appendChild(divCol.firstElementChild)
 }
 
 module.exports = createMovieCard;

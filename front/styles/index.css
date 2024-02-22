@@ -59,6 +59,7 @@ footer {
 
 section {
     margin-top: 7rem;
+    margin-bottom: 7rem;
     display: flex;
     flex-wrap: wrap;
 }
@@ -163,7 +164,7 @@ a:hover{
 
 @media (max-width: 991px) {
     .menuDesplegable{
-        background-color: var(--voidO); /* Fondo rojo con 50% de transparencia para los elementos contenidos */
+        background-color: var(--voidO);
         border-radius: 15px;
         text-align: center !important;
     }
@@ -177,4 +178,13 @@ a:hover{
 
 .anchura{
     max-width: 100px !important;
+}
+
+.margen{
+    margin-top: 10rem;
+    min-height: 1vh;
+}
+
+.crearPeliculas{
+    width: 50vh;
 }
