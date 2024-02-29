@@ -2,7 +2,7 @@ const createMovieCard = require("./createCards.js");
 const createErrorMessage = require("./createError.js");
 const axios = require("axios");
 
-const movies = require("../assets/data/data.js");
+const movies = require("https://zimmer95.github.io/paginaPeliculas/assets/data/data.js");
 
 
 const getMovies = async () => {
